@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  background-color: white;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+canvas {
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.btn {
+  position: absolute;
+  border: 2px solid whitesmoke;
+  border-radius: 7%;
+  background: black;
+  z-index: 1;
+  margin-top: 2%;
+  margin-left: 92%;
+  color: whitesmoke;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 100;
+}
+
+.btn:hover {
+  background: whitesmoke;
+  color: black;
+  border: 2px solid whitesmoke;
+  transform: translateY(-4px);
+  box-shadow: 2px 2px 20px -5px whitesmoke;
+}
+
+h1 {
+  transition: 0.5s ease all;
+  font-family: 'Oswald', sans-serif;
+  position: absolute;
+  color: whitesmoke;
+  margin-left: 37%;
+  margin-top: 25%;
+  font-size: 5em;
+}
+
+#thin {
+  font-weight: 100;
+  animation: 0.8s ease 0s 1 fontIncrease;
+}
+
+@keyframes fontIncrease {
+  0% {
+    font-size: 0.65em;
+  }
+
+  100% {
+    font-size: 1em;
+  }
+}
