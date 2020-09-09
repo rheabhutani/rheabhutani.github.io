@@ -5,9 +5,6 @@
 
   function init() {
     makeBackground();
-    //setTimeout(() => {
-      //id("left").classList.toggle("hidden");
-    //}, 1000);
   }
 
   function makeBackground() {
@@ -27,13 +24,15 @@
     fourier.style.height = height + "em";
     fourier.addEventListener("mouseover", () => {
       fourier.style.height = (height + 25) + "em";
+      console.log("hi");
     });
     fourier.addEventListener("mouseout", () => {
       fourier.style.height = height + "em";
-    })
+    });
     fourier.appendChild(circle);
     fourier.appendChild(line);
-    id("bg").appendChild(fourier);
+    id("bg-container").appendChild(fourier);
+
   }
 
   /**
