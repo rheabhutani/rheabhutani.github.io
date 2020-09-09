@@ -5,6 +5,9 @@
 
   function init() {
     makeBackground();
+    qs("img").addEventListener("mouseover", () => {
+      console.log("bitch");
+    });
   }
 
   function makeBackground() {
@@ -15,11 +18,11 @@
 
   function makeFourier() {
     let fourier = gen("div");
-    fourier.id = "fourier";
+    fourier.classList.add("fourier");
     let circle = gen("div");
-    circle.id = "circle";
+    circle.classList.add ("circle");
     let line = gen("div");
-    line.id = "line";
+    line.classList.add("line");
     let height = Math.ceil(Math.random() * 19) + 7;
     fourier.style.height = height + "em";
     fourier.addEventListener("mouseover", () => {
