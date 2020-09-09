@@ -5,6 +5,9 @@
 
   function init() {
     makeBackground();
+    //setTimeout(() => {
+      //id("left").classList.toggle("hidden");
+    //}, 1000);
   }
 
   function makeBackground() {
@@ -20,7 +23,7 @@
     circle.id = "circle";
     let line = gen("div");
     line.id = "line";
-    let height = Math.ceil(Math.random() * 25) + 1;
+    let height = Math.ceil(Math.random() * 19) + 7;
     fourier.style.height = height + "em";
     fourier.addEventListener("mouseover", () => {
       fourier.style.height = (height + 25) + "em";
