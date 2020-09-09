@@ -20,17 +20,17 @@
     circle.id = "circle";
     let line = gen("div");
     line.id = "line";
-    let height = Math.ceil(Math.random() * 18) + 1;
+    let height = Math.ceil(Math.random() * 25) + 1;
     fourier.style.height = height + "em";
     fourier.addEventListener("mouseover", () => {
-      fourier.style.height = (height + 15) + "em";
+      fourier.style.height = (height + 25) + "em";
     });
     fourier.addEventListener("mouseout", () => {
       fourier.style.height = height + "em";
     })
     fourier.appendChild(circle);
     fourier.appendChild(line);
-    id("landing").appendChild(fourier);
+    id("bg").appendChild(fourier);
   }
 
   /**
