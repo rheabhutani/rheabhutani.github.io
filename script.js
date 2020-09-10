@@ -5,9 +5,6 @@
 
   function init() {
     makeBackground();
-    qs("img").addEventListener("mouseover", () => {
-      console.log("bitch");
-    });
   }
 
   function makeBackground() {
@@ -27,7 +24,6 @@
     fourier.style.height = height + "em";
     fourier.addEventListener("mouseover", () => {
       fourier.style.height = (height + 25) + "em";
-      console.log("hi");
     });
     fourier.addEventListener("mouseout", () => {
       fourier.style.height = height + "em";
