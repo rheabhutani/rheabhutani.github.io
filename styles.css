@@ -11,7 +11,7 @@ body {
   overflow: auto;
   height: -webkit-fill-available;
   width: -webkit-fill-available;
-  background-color: #fcf2ff;
+  background-color: #ffc9c9;
 }
 
 .hidden {
@@ -156,10 +156,10 @@ img:hover {
 
 #right {
   vertical-align: top;
-  text-align: right;
+  text-align: left;
   font-size: 30px;
   margin-right: 20%;
-  margin-top: 15%;
+  margin-top: 13%;
   animation-name: fadeIn;
   animation-duration: 2.5s;
   text-shadow: 0.2vh 0.2vh 0.25vh grey;
